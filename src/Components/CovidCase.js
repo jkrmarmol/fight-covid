@@ -11,7 +11,14 @@ function CovidCase() {
     dispatch(getCovidData())
   }, [dispatch])
 
-  console.log(covid.data.data)
+  const dateRender = () => {
+    let dateUpdate = covid.data.data === undefined ? covid.status : covid.data.data.covidCaseLastUpdated.updatedAt;
+    let time = new Date(dateUpdate).toLocaleTimeString();
+    let date = new Date(dateUpdate).toDateString();
+    return `${date} - ${time}`;
+  }
+  
+
   return (
     <section className="covid-case">
       <div className="flex-container">
@@ -50,10 +57,13 @@ function CovidCase() {
           <p className="title">Severe</p>
           <p className="number-cases severe">{ covid.data.data === undefined ? covid.status : covid.data.data.covidCaseStatus.severe }</p>
         </div>
-
         <div className="flex-items">
           <p className="title">All</p>
           <p className="number-cases all">{ covid.data.data === undefined ? covid.status : covid.data.data.covidCaseStatus.all }</p>
+        </div>
+        <div className="flex-items">
+          <p className="title">Date Updated</p>
+          <p className="number-cases date-updated">{dateRender()}</p>
         </div>
       </div>
     </section>
