@@ -1,9 +1,21 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
+const body = {
+  operationName: null,
+  variables: {},
+  query: "{\n  covidCaseStatus: covid_case_status {\n    active\n    all\n    asymptomatic\n    critical\n    died\n    mild\n    repatriate\n    recovered\n    severe\n    __typename\n  }\n  covidCaseLastUpdated: covid_case_last_updated {\n    updatedAt\n    __typename\n  }\n}\n"
+}
+
 export const getCovidData = createAsyncThunk(
   'covid/getCovidData',
   async (arg, thunkAPI) => {
-    const response =  await fetch('https://covid19-api-philippines.herokuapp.com/api/summary');
+    const response =  await fetch('https://dbph-gov-gql-bl4faseyeq-de.a.run.app/', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    });
     const json = await response.json();
     return json;
   }

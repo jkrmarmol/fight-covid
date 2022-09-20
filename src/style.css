@@ -191,16 +191,28 @@ header button {
   color: #88cc60;
 }
 
-.flex-items .recovery-rate {
-  color: #88cc60;
-}
-
-.flex-items .fatality-rate {
+.flex-items .critical {
   color: #f75f6a;
 }
 
-.flex-items .total {
+.flex-items .mild {
+  color: #f5c35d;
+}
+
+.flex-items .asymptomatic {
+  color: #88cc60;
+}
+
+.flex-items .repatriate {
+  color: #f5c35d;
+}
+
+.flex-items .severe {
   color: #e16a89;
+}
+
+.flex-items .all {
+  color: #00b3ff;
 }
 
 #recover-earth .starts-from-us {
