@@ -9,7 +9,7 @@ function CovidCase() {
 
   useEffect(() => {
     dispatch(getCovidData())
-  }, [dispatch, getCovidData])
+  }, [dispatch])
 
   return (
     <section className="covid-case">
@@ -27,19 +27,19 @@ function CovidCase() {
         </div>
         <div className="flex-items">
           <p className="title">Recoveries</p>
-          <p className="number-cases recovered">{ covid.data.data === undefined ? covid.status : covid.data.data.recoveries }</p>
+          <p className="number-cases recoveries">{ covid.data.data === undefined ? covid.status : covid.data.data.recoveries }</p>
         </div>
         <div className="flex-items">
           <p className="title">Fatality rate</p>
-          <p className="number-cases recovered">{ covid.data.data === undefined ? covid.status : covid.data.data.fatality_rate + '%' }</p>
+          <p className="number-cases fatality-rate">{ covid.data.data === undefined ? covid.status : covid.data.data.fatality_rate + '%' }</p>
         </div>
         <div className="flex-items">
           <p className="title">Recovery rate</p>
-          <p className="number-cases recovered">{ covid.data.data === undefined ? covid.status : covid.data.data.recovery_rate + '%' }</p>
+          <p className="number-cases recovery-rate">{ covid.data.data === undefined ? covid.status : covid.data.data.recovery_rate + '%' }</p>
         </div>
         <div className="flex-items">
           <p className="title">Total</p>
-          <p className="number-cases recovered">{ covid.data.data === undefined ? covid.status : covid.data.data.total }</p>
+          <p className="number-cases total">{ covid.data.data === undefined ? covid.status : covid.data.data.total }</p>
         </div>
       </div>
     </section>

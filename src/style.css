@@ -36,6 +36,11 @@ header ul li {
   padding: 10px 22px;
 }
 
+header ul li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
 header .title h1 {
   font-size: 1.3em;
 }
@@ -182,8 +187,20 @@ header button {
   color: #f75f6a;
 }
 
-.flex-items .recovered {
-  color: #3ed4ff;
+.flex-items .recoveries {
+  color: #88cc60;
+}
+
+.flex-items .recovery-rate {
+  color: #88cc60;
+}
+
+.flex-items .fatality-rate {
+  color: #f75f6a;
+}
+
+.flex-items .total {
+  color: #e16a89;
 }
 
 #recover-earth .starts-from-us {

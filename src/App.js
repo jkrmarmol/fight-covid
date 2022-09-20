@@ -7,19 +7,21 @@ import Footer from './Components/Footer';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import './style.css';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
     <div className='container'>
-      <VirusFly />
-      <Header />
-      <RecoverEarth />
-      <ImageRight />
-      <Provider store={store}>
-        <CovidCase />
-      </Provider>
-      <Footer />
+      <Router>
+        <VirusFly />
+          <Header />
+          <RecoverEarth />
+          <ImageRight />
+          <Provider store={store}>
+            <CovidCase />
+          </Provider>
+          <Footer />
+      </Router>
     </div>
   );
 }
