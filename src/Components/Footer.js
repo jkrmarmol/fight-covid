@@ -12,7 +12,7 @@ function Footer() {
           <i className='bx bxl-facebook'></i>
         </a>
         <a
-          a='https://github.com/jkrmarmol'
+          href='https://github.com/jkrmarmol'
           target='_blank'
         >
           <i className='bx bxl-github' ></i>
