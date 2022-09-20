@@ -21,3 +21,8 @@ It is essential to keep track of them. When the pandemic is over, such extraordi
 [fb@jkrmarmol](https://fb.com/jkrmarmol)
 
 [github@jkrmarmol](https://github.com/jkrmarmol)
+
+## Deployment URL
+
+[https://km-fight-covid.netlify.app/](https://km-fight-covid.netlify.app/)
+[https://km-fight-covid.vercel.app/](https://km-fight-covid.vercel.app/)
