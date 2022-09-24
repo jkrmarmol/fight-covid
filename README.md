@@ -13,14 +13,21 @@ It is essential to keep track of them. When the pandemic is over, such extraordi
 - JavaScript (ES6)
 - ReactJS
 - React Redux & Redux Toolkit
-- covid19.gov.ph
+- [Covid PH API](https://covid-api-ph.herokuapp.com/)
 
 
+## Lighthouse Report
+
+![pic](https://i.postimg.cc/hjQ1MXgs/Untitled.png)
+[see full report](https://drive.google.com/file/d/1-fdDjYDPYqgNbBlCb1R7UIPF5VULGsS5/view?usp=sharing)
 
 ## Deployment URL
 Netlify : 
+
 https://km-fight-covid.netlify.app/
+
 Vercel : 
+
 https://km-fight-covid.vercel.app/
 
 
