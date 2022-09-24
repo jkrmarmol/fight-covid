@@ -9,13 +9,7 @@ const body = {
 export const getCovidData = createAsyncThunk(
   'covid/getCovidData',
   async (arg, thunkAPI) => {
-    const response =  await fetch('https://dbph-gov-gql-bl4faseyeq-de.a.run.app/', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify(body)
-    });
+    const response =  await fetch('https://covid-api-ph.herokuapp.com/');
     const json = await response.json();
     return json;
   }
