@@ -28,7 +28,7 @@ https://km-fight-covid.netlify.app/
 
 Vercel : 
 
-https://km-fight-covid.vercel.app/
+https://fightcovid.vercel.app/
 
 
 ## Developer
